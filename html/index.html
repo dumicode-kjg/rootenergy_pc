@@ -1,47 +1,185 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <title>루트에너지</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
 
-<head>
-  <title>루트에너지</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
-  <meta name="format-detection" content="telephone=no" />
+    <link type="text/css" rel="stylesheet" href="../js/swiper/swiper-bundle.min.css" />
+    <link type="text/css" rel="stylesheet" href="../js/nice-select/nice-select.css" />
+    <link type="text/css" rel="stylesheet" href="../css/style.css" />
 
-  <link type="text/css" rel="stylesheet" href="../js/swiper/swiper-bundle.min.css" />
-  <link type="text/css" rel="stylesheet" href="../js/nice-select/nice-select.css" />
-  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+    <script src="../js/jquery-3.7.0.min.js"></script>
+    <script src="../js/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/nice-select/jquery.nice-select.min.js"></script>
+    <script>
+      $(function () {
+        $("select.select").niceSelect();
+      });
+    </script>
+    <script src="../js/design.js"></script>
+  </head>
 
-  <script src="../js/jquery-3.7.0.min.js"></script>
-  <script src="../js/swiper/swiper-bundle.min.js"></script>
-  <script src="../js/nice-select/jquery.nice-select.min.js"></script>
-  <script>
-    $(function () {
-      $("select.select").niceSelect();
-    });
-  </script>
-  <script src="../js/design.js"></script>
-</head>
+  <body>
+    <div id="wrap">
+      <!-- top pop -->
+      <div class="top_pop">
+        <a href="#" class="banner"><img src="../images/top_banner01.png" alt="" /></a>
+        <button type="button" class="btn_close"></button>
+      </div>
+      <script>
+        $(function () {
+          $(".top_pop .btn_close").on("click", function () {
+            $(this).parents(".top_pop").addClass("hide");
+          });
+        });
+      </script>
+      <!--// top pop -->
 
-<body>
-  <div id="wrap">
-    <!-- header -->
-    <header id="header">
-      header
-    </header>
-    <!--// header -->
+      <!-- header -->
+      <header id="header">
+        <div class="inner_center">
+          <h1 class="logo"><a href="#">ROOTENERGY</a></h1>
+          <nav class="gnb_box">
+            <ul class="gnb">
+              <li>
+                <a href="#" class="in_ul"><span>투자</span></a>
+                <div class="depth">
+                  <ul>
+                    <li><a href="#">투자하기</a></li>
+                    <li><a href="#">법인투자안내</a></li>
+                    <li><a href="#">채권거래소</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#"><span>대출</span></a>
+              </li>
+              <li>
+                <a href="#" class="in_ul"><span>회사소개</span></a>
+                <div class="depth">
+                  <ul>
+                    <li><a href="#">공시안내</a></li>
+                    <li><a href="#">언론보도</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="in_ul"><span>고객센터</span></a>
+                <div class="depth">
+                  <ul>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">자주묻는질문</a></li>
+                    <li><a href="#">프로모션</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div class="head_right">
+            <a href="#" class="btn_login">로그인</a>
+            <a href="#" class="btn_join">회원가입</a>
+            <a href="#" class="btn"><img src="../images/ico_my.svg" alt="마이페이지" /></a>
+            <a href="javascript:toggleMenu();" class="btn"><img src="../images/ico_menu.svg" alt="전체메뉴" /></a>
+          </div>
+        </div>
+      </header>
+      <div class="all_menu">
+        <div class="inner_center">
+          <button type="button" onclick="toggleMenu()" class="btn_close"></button>
+          <div class="menu_left">
+            <div class="menu_head">
+              <p class="txt_welcome">환영합니다! <br />로그인 후 이용해주세요</p>
+            </div>
+            <div class="menu_info">
+              <!-- 로그인전 -->
+              <ul class="loginjoin">
+                <li><a href="#">로그인</a></li>
+                <li>
+                  <a href="#">
+                    회원가입
+                    <p class="tip">지속가능한 친환경 투자 시작하기</p>
+                  </a>
+                </li>
+              </ul>
+              <!--// 로그인전 -->
+              <ul class="menu_main">
+                <li>
+                  <a href="#"><img src="../images/ico_menu_main01.png" alt="투자현황" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="../images/ico_menu_main02.png" alt="마이페이지" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="../images/ico_menu_main03.png" alt="프로모션" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="menu_right">
+            <ul class="menu_list">
+              <li>
+                <a href="#">
+                  <i class="ico" style="background-image: url(../images/ico_menu_list01.svg)"></i>
+                  <span>투자</span>
+                </a>
+                <ul class="depth">
+                  <li><a href="#">투자하기</a></li>
+                  <li><a href="#">법인투자안내</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="ico" style="background-image: url(../images/ico_menu_list02.svg)"></i>
+                  <span>대출</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="ico" style="background-image: url(../images/ico_menu_list03.svg)"></i>
+                  <span>회사소개</span>
+                </a>
+                <ul class="depth">
+                  <li><a href="#">공시안내</a></li>
+                  <li><a href="#">언론보도</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="ico" style="background-image: url(../images/ico_menu_list04.svg)"></i>
+                  <span>고객센터</span>
+                </a>
+                <ul class="depth">
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">자주묻는질문</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="ico" style="background-image: url(../images/ico_menu_list05.svg)"></i>
+                  <span>채권거래소</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="ico" style="background-image: url(../images/ico_menu_list06.svg)"></i>
+                  <span>이웃신청 현황</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--// header -->
 
-    <!-- container -->
-    <div id="container">
-      container
+      <!-- container -->
+      <div id="container">container</div>
+      <!--// container -->
+
+      <!-- footer -->
+      <footer id="footer">footer</footer>
+      <!--// footer -->
     </div>
-    <!--// container -->
-
-    <!-- footer -->
-    <footer id="footer">
-      footer
-    </footer>
-    <!--// footer -->
-  </div>
-</body>
-
+  </body>
 </html>

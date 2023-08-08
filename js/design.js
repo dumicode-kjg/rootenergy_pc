@@ -1,3 +1,8 @@
+/* all menu */
+function toggleMenu() {
+  $("body").toggleClass("openMenu");
+}
+
 /* wr */
 $(function () {
   $("input.text").each(function () {
