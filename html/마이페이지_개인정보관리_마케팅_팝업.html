@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <title>마이페이지_자산관리_입금</title>
+    <title>마이페이지_개인정보수정 및 관리</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
     <meta name="format-detection" content="telephone=no" />
@@ -201,7 +201,7 @@
         <div class="tab_wrap">
           <ul class="tab_list">
             <li>
-              <a href="#" class="active">자산관리</a>
+              <a href="#">자산관리</a>
             </li>
             <li>
               <a href="#">투자현황</a>
@@ -210,188 +210,152 @@
               <a href="#">상환스케줄<span class="cnt">2</span></a>
             </li>
             <li>
-              <a href="#">개인정보관리</a>
+              <a href="#" class="active">개인정보관리</a>
             </li>
           </ul>
         </div>
 
         <div class="inner_center_s">
-          <div class="sub_m_title_box">
-            <h3 class="title">나의자산</h3>
-          </div>
-
-          <ul class="my_assets">
-            <li>
-              <div class="inbox">
-                <div class="imgbox"><img src="../images/ico_my_assets01.svg" alt="" /></div>
-                <div class="txtbox">
-                  <p class="tit">예치금<button class="btn_refresh"></button></p>
-                  <p class="val">1,000,000<span class="s_txt">원</span></p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="inbox">
-                <div class="imgbox"><img src="../images/ico_my_assets02.svg" alt="" /></div>
-                <div class="txtbox">
-                  <p class="tit">총 누적 투자금액<a href="#" class="btn_tip"></a></p>
-                  <p class="val">10,000,000<span class="s_txt">원</span></p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="inbox">
-                <div class="imgbox"><img src="../images/ico_my_assets03.svg" alt="" /></div>
-                <div class="txtbox">
-                  <p class="tit">이용가능한도<a href="#" class="btn_tip"></a></p>
-                  <p class="val">9,000,000<span class="s_txt">원</span></p>
-                </div>
-              </div>
-            </li>
-          </ul>
-
-          <div class="sub_m_title_box">
-            <h3 class="title">투자방법</h3>
-          </div>
-
-          <ul class="inv_method_list">
-            <li>
-              <a href="#" class="inbox">
-                <div class="imgbox">
-                  <img src="../images/bg_inv_method01.png" alt="" />
-                </div>
-                <div class="txtbox">
-                  <p class="tit">개인전용 <br />가상계좌번호 확인</p>
-                  <p class="txt">아래 가상계좌번호를 <br />확인해주세요</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="inbox">
-                <div class="imgbox">
-                  <img src="../images/bg_inv_method02.png" alt="" />
-                </div>
-                <div class="txtbox">
-                  <p class="tit">예치금 입금</p>
-                  <p class="txt">*가입 시 등록한 <br />출금계좌에서만 입금가능</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="inbox">
-                <div class="imgbox">
-                  <img src="../images/bg_inv_method03.png" alt="" />
-                </div>
-                <div class="txtbox">
-                  <p class="tit">투자 준비 완료</p>
-                  <p class="txt">이제 마음껏 투자하세요!</p>
-                </div>
-              </a>
-            </li>
-          </ul>
-
-          <div class="sub_m_title_box">
-            <h2 class="title">입출금 관리</h2>
-            <a href="#" class="btn_style h45 bd_gray02">입출금내역</a>
-          </div>
-          <div class="sub_whitebox mt20 mb40">
-            <ul class="sub_tab">
-              <li><a href="javascript:;" class="active">투자금 입금</a></li>
-              <li><a href="javascript:;">투자금 출금</a></li>
-            </ul>
-            <div class="sub_tabcon active">
-              <div class="my_mgmt">
-                <div class="my_bank">
-                  <div class="imgbox"><img src="../images/img_my_rootenergy.png" alt="" /></div>
-                  <div class="txtbox">
-                    <dl>
-                      <dt>은행명</dt>
-                      <dd>
-                        <i class="bankicon"><img src="../images/ico_bankicon_nh.svg" alt="" /></i>
-                      </dd>
-                    </dl>
-                    <dl>
-                      <dt>예금주</dt>
-                      <dd>홍길동</dd>
-                    </dl>
-                    <dl>
-                      <dt>투자금 입금 계좌</dt>
-                      <dd class="color_blue">0000-00-000000<button type="button" class="btn_copy">복사</button></dd>
-                    </dl>
-                  </div>
-                </div>
-                <div class="pt20 pr10 pl10">
-                  <p class="star_notif">
-                    *
-                    <strong class="txt_dt">본인명의 타행계좌 : </strong>본인명의 타행계좌로는 입금할 수 없습니다. <br />
-                    루트에너지에 등록된 출금계좌가 주거래 은행이 아닌 경우 출금계좌를 변경하여 이용할 수 있습니다.
-                  </p>
-                  <p class="star_notif">* <strong class="txt_dt">간편송금 : </strong>토스, 카카오페이 등 간편송금을 통한 입금이 불가능 합니다.</p>
-                  <p class="star_notif">* <strong class="txt_dt">오픈뱅킹 : </strong>타행 은행 인터넷 뱅킹 혹은 모바일 뱅킹에서 오픈뱅킹을 통한 입금이 불가능 합니다.</p>
-                  <p class="star_notif">* <strong class="txt_dt">은행 방문 이용 : </strong>등록된 투자금 출금 계좌가 농협이 아닌 경우 창구, ATM에서 입금이 불가능합니다.</p>
-                </div>
-              </div>
-            </div>
-            <div class="sub_tabcon">
-              <div class="my_mgmt">
-                <div class="my_bank">
-                  <div class="imgbox"><img src="../images/img_my_rootenergy.png" alt="" /></div>
-                  <div class="txtbox">
-                    <dl>
-                      <dt>은행명</dt>
-                      <dd>
-                        카카오뱅크증권
-                        <div class="change_bank">
-                          <button type="button" class="btn_style h45 bd_blue">계좌변경</button>
-                        </div>
-                      </dd>
-                    </dl>
-                    <dl>
-                      <dt>예금주</dt>
-                      <dd>홍길동</dd>
-                    </dl>
-                    <dl>
-                      <dt>투자금 출금 계좌</dt>
-                      <dd class="color_blue">0000-00-000000<button type="button" class="btn_copy">복사</button></dd>
-                    </dl>
-                  </div>
-                </div>
-
-                <div class="pt20 pr10 pl10">
-                  <p class="star_notif">입금 안내사항을 적는 칸입니다 입금 안내사항을 적는 칸입니다.</p>
-                  <p class="star_notif">입금 안내사항을 적는 칸입니다 적는 칸입니다.</p>
-                  <p class="star_notif">입금 안내사항을 적는 칸입니다 입금 안내사항을 적는 칸입니다.</p>
-                </div>
-
-                <dl class="my_amount">
-                  <dt>출금 가능 금액</dt>
-                  <dd>1,000,000원</dd>
-                </dl>
-
+          <div class="sub_whitebox mt80 pr40 pb50 pl40">
+            <div class="flex_tr">
+              <div class="flex_th">로그인 ID</div>
+              <div class="flex_td">
                 <div class="flex_input">
-                  <input type="text" class="text" placeholder="출금금액 입력" />
-                  <span class="txt_unit">원</span>
-                  <button type="button" class="btn_style h70 bd_gray02 ml40">전액입력</button>
+                  <p class="txt_val">hong@naver.com</p>
                 </div>
-
-                <div class="btn_box mt40">
-                  <button type="button" class="btn_style h80 bg_blue">출금신청</button>
+              </div>
+            </div>
+            <div class="flex_tr">
+              <div class="flex_th">비밀번호</div>
+              <div class="flex_td">
+                <div class="flex_input">
+                  <input type="password" class="text" placeholder="현재 비밀번호 입력" />
+                </div>
+                <div class="flex_input">
+                  <input type="password" class="text" placeholder="변경 비밀번호 입력" />
+                </div>
+                <div class="flex_input">
+                  <input type="password" class="text" placeholder="변경 비밀번호 재입력" />
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="hr_line"></div>
+
+          <div class="sub_whitebox pr40 pb50 pl40">
+            <div class="flex_tr">
+              <div class="flex_th">이름</div>
+              <div class="flex_td">
+                <div class="flex_input">
+                  <p class="txt_val">홍길동</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex_tr">
+              <div class="flex_th">생년월일</div>
+              <div class="flex_td">
+                <div class="flex_input">
+                  <input type="text" class="text" value="1999.11.11" />
+                </div>
+              </div>
+            </div>
+            <div class="flex_tr">
+              <div class="flex_th">휴대폰번호</div>
+              <div class="flex_td">
+                <div class="flex_input">
+                  <input type="text" class="text" value="010" />
+                  <span class="txt_between">-</span>
+                  <input type="text" class="text" value="1234" />
+                  <span class="txt_between">-</span>
+                  <input type="text" class="text" value="1234" />
+                </div>
+              </div>
+            </div>
+            <div class="flex_tr">
+              <div class="flex_th">주소</div>
+              <div class="flex_td">
+                <div class="flex_input">
+                  <input type="text" class="text" value="04778" />
+                  <button type="button" class="btn_style h70 bd_gray02">주소찾기</button>
+                </div>
+                <div class="flex_input">
+                  <input type="text" class="text" value="서울 성동구 뚝섬로1나길 5 (성수동1234 뚝섬)" />
+                </div>
+                <div class="flex_input">
+                  <input type="text" class="text" value="헤이그라운드 101호" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sub_whitebox mt20 pr40 pb10 pl40">
+            <div class="flex_tr pt0">
+              <div class="flex_th mt10">투자자 유형</div>
+              <div class="flex_td">
+                <div class="flex_input mt10">
+                  <p class="txt_val pl10">개인투자자</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sub_whitebox mt20 pr40 pb50 pl40">
+            <div class="flex_tr pt0">
+              <div class="flex_th mt10">수신동의</div>
+              <div class="flex_td pl10">
+                <p class="mt30 ft_22_33">안내멘트 변경 예정</p>
+                <div class="mt5">
+                  <a href="#" class="color_blue ft_22_33 fw600">마케팅 정보 수집 및 활용</a>
+                </div>
+                <div class="flex_input">
+                  <!-- label_box -->
+                  <div class="label_box">
+                    <input type="checkbox" id="lb_chk01" checked="" />
+                    <label for="lb_chk01">
+                      <strong class="txt">이메일</strong>
+                    </label>
+                  </div>
+                  <div class="label_box">
+                    <input type="checkbox" id="lb_chk02" />
+                    <label for="lb_chk02">
+                      <strong class="txt">문자</strong>
+                    </label>
+                  </div>
+                  <!--// label_box -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn_box mt40">
+            <button type="button" class="btn_style h80 bg_blue">변경사항 저장</button>
+          </div>
+
+          <p class="txt_footcenter">루트에너지를 더 이상 이용하지 않으려면 <a href="#">회원탈퇴 바로가기</a></p>
         </div>
       </div>
       <!--// container -->
     </div>
+
     <!-- 팝업 -->
     <div class="pop_container" id="pop1">
       <div class="pop_mask" onclick="popClose('#pop1')"></div>
       <div class="pop_wrapper">
         <div class="pop_box">
           <!-- 내용 -->
-          <h1 class="pop_title">예치금 출금</h1>
-          <p class="pop_msg">출금금액을 확인해주세요.</p>
+          <h1 class="pop_title">마케팅 정보 수집 및 활용</h1>
+
+          <div class="pr4 pl4">
+            <p class="pop_terms_tit">마케팅 정보 수집 및 활용</p>
+            <p class="pop_terms_txt">
+              서비스 제공 및 이용과 관련하여 ㈜루트에너지가 취득한 개인정보는 "<a href="#" class="color_blue">개인정보처리방침</a>"에 의하여 엄격하게 관리되며, 발송되는 마케팅 정보는 회원님에게 유익한 상품 정보, 신규 서비스 안내, 각종 이벤트 등 광고성 정보로 관련법의 규정을 준수하여 발송됩니다. 단,
+              광고성 정보 이외 의무적으로 안내되어야 하는 정보성 내용은 수신동의 여부와 무관하게 제공됩니다. <br />
+              <br />
+              수신 동의 이후에도 의사에 따라 동의를 철회할 수 있으며, 수신을 동의하지 않아도 (주)루트에너지가 제공하는 서비스를 이용할 수 있으나, 당사의 마케팅 정보를 수신하지 못할 수 있습니다.
+            </p>
+          </div>
+
           <div class="btn_box mt40">
             <button class="btn_style h80 bg_blue">확인</button>
           </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <title>마이페이지_투자현황</title>
+    <title>채권거래소</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
     <meta name="format-detection" content="telephone=no" />
@@ -180,64 +180,70 @@
 
       <!-- container -->
       <div id="container">
-        <div class="sub_head_wrap bg_blue">
+        <div class="sub_head_wrap">
           <div class="inner_center">
             <ul class="sub_location">
               <li><a href="#" class="home">홈</a></li>
-              <li><em>마이페이지</em></li>
+              <li><em>채권거래소</em></li>
             </ul>
-            <div class="inner_center_s">
-              <div class="mypage_head">
-                <p class="txt_welcome"><em>홍길동님</em>, 부자되세요!</p>
-                <div class="user_type">
-                  <span class="tip">상향신청</span>
-                  <span class="txt">개인<br />투자자</span>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
-        <div class="tab_wrap">
+        <div class="inner_center_s">
+          <div class="sub_title_box center">
+            <h2 class="title">투자등급 상향신청</h2>
+            <i class="ico_help">
+              <img src="../images/ico_help.svg" alt="" onclick="helpToggle()" />
+              <div class="help_layer">
+                <button type="button" class="btn_close" onclick="helpToggle()">닫기</button>
+                <p>
+                  원리금수취권 거래는 판매와 구매 서비스로 구분되며, <br />
+                  <em>판매가 가능한 상품</em>에 대해서만 판매 신청을 할 수 있습니다.
+                </p>
+                <p>
+                  구매의 경우, <br />
+                  소득적격/전문/법인 투자자는 자유롭게 구매가 가능하나 <br />
+                  개인투자자의 경우 <em>2021년 8월 27일 이후 온투법 거래가 <br />5회 이상 </em>있는 경우에만 가능합니다.
+                </p>
+              </div>
+            </i>
+            <script>
+              function helpToggle() {
+                $(".ico_help").toggleClass("on");
+              }
+            </script>
+          </div>
+
+          <div class="info_use_box">
+            <p class="tit">
+              판매자
+              <a href="#" class="link">판매신청하기</a>
+            </p>
+            <div class="con"><img src="../images/img_info_use01.png" alt="" /></div>
+          </div>
+
+          <div class="info_use_box">
+            <p class="tit">구매자</p>
+            <div class="con"><img src="../images/img_info_use02.png" alt="" /></div>
+          </div>
+        </div>
+
+        <div class="tab_wrap mt35">
           <ul class="tab_list">
             <li>
-              <a href="#">자산관리</a>
+              <a href="#" class="active">거래중</a>
             </li>
             <li>
-              <a href="#" class="active">투자현황</a>
-            </li>
-            <li>
-              <a href="#">상환스케줄<span class="cnt">2</span></a>
-            </li>
-            <li>
-              <a href="#">개인정보관리</a>
+              <a href="#">거래완료</a>
             </li>
           </ul>
         </div>
 
         <div class="inner_center_s">
-          <div class="my_status_box">
-            <div class="my_status">
-              <div class="imgbox"><img src="../images/ico_my_status.svg" alt="" /></div>
-              <div class="my_data">
-                <dl>
-                  <dt class="color_blue">나의 투자</dt>
-                  <dd class="color_blue"><em>3</em>건</dd>
-                </dl>
-                <dl>
-                  <dt>총 투자금액</dt>
-                  <dd><em>81,140,000</em>원</dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-
           <div class="choice_chips_wrap">
-            <select class="select_blue">
-              <option>전체</option>
-              <option>진행중</option>
-              <option>상환중</option>
-              <option>상환완료</option>
+            <select class="select_blue ico_area">
+              <option>강원도</option>
+              <option>경기도</option>
             </select>
             <script>
               $(function () {
@@ -260,7 +266,7 @@
               <div class="inv_item">
                 <div class="in_head bg_blue">
                   <p class="title">채권번호 <em>RB-9335</em></p>
-                  <button class="btn_style h45 bd_white">투자취소</button>
+                  <p class="txt_right">고흥군 인근 주민 구매가능</p>
                 </div>
                 <div class="in_cont">
                   <div class="prd_infobox">
@@ -274,6 +280,8 @@
                     <dl class="prd_price">
                       <dt>투자금액</dt>
                       <dd>81,140,000원</dd>
+                      <dt>원금</dt>
+                      <dd>20,000,000원</dd>
                     </dl>
                   </div>
                   <div class="prd_databox">
@@ -291,20 +299,22 @@
                     </dl>
                     <dl>
                       <dt>상태</dt>
-                      <dd><span class="color_blue">진행중</span></dd>
+                      <dd><span>진행중</span></dd>
                     </dl>
                   </div>
                 </div>
                 <div class="in_btnbox">
                   <a href="#" class="btn">수익금지급예정표</a>
+                  <a href="#" class="btn color_blue">원리금수취권 구매</a>
                 </div>
               </div>
             </li>
 
             <li class="mt30">
               <div class="inv_item">
-                <div class="in_head bg_mint">
+                <div class="in_head bg_blue">
                   <p class="title">채권번호 <em>RB-9335</em></p>
+                  <p class="txt_right">태백시 인근 주민 구매가능</p>
                 </div>
                 <div class="in_cont">
                   <div class="prd_infobox">
@@ -318,6 +328,8 @@
                     <dl class="prd_price">
                       <dt>투자금액</dt>
                       <dd>81,140,000원</dd>
+                      <dt>원금</dt>
+                      <dd>20,000,000원</dd>
                     </dl>
                   </div>
                   <div class="prd_databox">
@@ -335,21 +347,22 @@
                     </dl>
                     <dl>
                       <dt>상태</dt>
-                      <dd><span class="color_mint">상환중</span></dd>
+                      <dd><span>상환중</span></dd>
                     </dl>
                   </div>
                 </div>
                 <div class="in_btnbox">
-                  <a href="#" class="btn">원리금수취권 증서</a>
                   <a href="#" class="btn">수익금지급예정표</a>
+                  <a href="#" class="btn color_blue">원리금수취권 구매</a>
                 </div>
               </div>
             </li>
 
             <li class="mt30">
               <div class="inv_item">
-                <div class="in_head bg_gray">
+                <div class="in_head bg_blue">
                   <p class="title">채권번호 <em>RB-9335</em></p>
+                  <p class="txt_right">태백시 인근 주민 구매가능</p>
                 </div>
                 <div class="in_cont">
                   <div class="prd_infobox">
@@ -363,6 +376,8 @@
                     <dl class="prd_price">
                       <dt>투자금액</dt>
                       <dd>81,140,000원</dd>
+                      <dt>원금</dt>
+                      <dd>20,000,000원</dd>
                     </dl>
                   </div>
                   <div class="prd_databox">
@@ -380,14 +395,13 @@
                     </dl>
                     <dl>
                       <dt>상태</dt>
-                      <dd>상환완료</dd>
+                      <dd><span>상환완료</span></dd>
                     </dl>
                   </div>
                 </div>
                 <div class="in_btnbox">
-                  <a href="#" class="btn">원리금수취권 증서</a>
                   <a href="#" class="btn">수익금지급예정표</a>
-                  <a href="#" class="btn">원리금수취권 신청</a>
+                  <a href="#" class="btn color_blue">원리금수취권 구매</a>
                 </div>
               </div>
             </li>
