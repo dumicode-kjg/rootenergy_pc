@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <title>로그인</title>
+    <title>회원가입</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
     <meta name="format-detection" content="telephone=no" />
@@ -184,61 +184,49 @@
           <div class="inner_center">
             <ul class="sub_location">
               <li><a href="#" class="home">홈</a></li>
-              <li><em>로그인</em></li>
+              <li><em>회원가입</em></li>
             </ul>
           </div>
         </div>
 
-        <div class="login_wrap">
-          <div class="inner_center_xs">
-            <div class="login_logo">
-              <p class="txt">환경을 생각하는 투자 플랫폼</p>
-              <h1 class="logo"><a href="#">ROOTENERGY</a></h1>
+        <div class="inner_center_s">
+          <div class="sub_title_box">
+            <h2 class="title">회원가입을 위해 <br />약관에 동의해 주세요</h2>
+          </div>
+
+          <div class="terms_area">
+            <div class="terms_box">
+              <input type="checkbox" class="check_all" id="chkALL" />
+              <label for="chkALL"><span class="txt">약관 전체동의</span></label>
             </div>
-
-            <div class="login_form">
-              <div class="flex_input">
-                <input type="text" class="text" placeholder="이메일을 입력해주세요" />
-              </div>
-              <div class="flex_input">
-                <input type="password" class="text" placeholder="비밀번호를 입력해주세요" />
-              </div>
-              <div class="flex_input">
-                <div class="label_box">
-                  <input type="checkbox" id="save_chk01" checked="" />
-                  <label for="save_chk01">
-                    <span class="txt">이메일 저장하기</span>
-                  </label>
-                </div>
-              </div>
-
-              <div class="btn_box mt40">
-                <button type="button" class="btn_style h80 bg_blue">로그인</button>
-              </div>
-
-              <ul class="login_links">
-                <li><a href="#">이메일 찾기</a></li>
-                <li><a href="#">비밀번호 찾기</a></li>
-                <li class="right_btn">
-                  <a href="#" class="btn_join"><em>회원가입</em> 바로가기</a>
-                </li>
-              </ul>
-            </div>
-
-            <ul class="login_sns">
+            <ul class="terms_list">
               <li>
-                <a href="#" class="inbox">
-                  <div class="ico"><img src="../images/ico_sns_kakao.svg" alt="" /></div>
-                  <span class="txt">카카오</span>
-                </a>
+                <div class="label_box">
+                  <input type="checkbox" id="lb_chk01" />
+                  <label for="lb_chk01"></label>
+                </div>
+                <a href="#" class="link"><span class="color_blue">(필수)</span> 휴대폰 본인확인</a>
               </li>
               <li>
-                <a href="#" class="inbox">
-                  <div class="ico"><img src="../images/ico_sns_naver.svg" alt="" /></div>
-                  <span class="txt">네이버</span>
-                </a>
+                <div class="label_box">
+                  <input type="checkbox" id="lb_chk02" />
+                  <label for="lb_chk02"></label>
+                </div>
+                <a href="#" class="link"><span class="color_blue">(필수)</span> 루트에너지 이용약관 및 개인정보 처리 동의</a>
+              </li>
+              <li>
+                <div class="label_box">
+                  <input type="checkbox" id="lb_chk03" />
+                  <label for="lb_chk03"></label>
+                </div>
+                <a href="#" class="link"><span>(선택)</span> 마케팅 목적 개인(신용)정보 이용 동의서</a>
               </li>
             </ul>
+          </div>
+
+          <div class="btn_box mt80 mb40">
+            <a href="#" class="btn_style h80 bd_gray flex_none mw_0"><img src="../images/ico_back_gray_40.svg" alt="" /></a>
+            <button type="button" class="btn_style h80 bg_blue">다음</button>
           </div>
         </div>
       </div>
