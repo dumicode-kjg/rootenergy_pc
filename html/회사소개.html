@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>회사소개</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <link type="text/css" rel="stylesheet" href="../js/swiper/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../js/nice-select/nice-select.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+
+  <script src="../js/jquery-3.7.0.min.js"></script>
+  <script src="../js/swiper/swiper-bundle.min.js"></script>
+  <script src="../js/nice-select/jquery.nice-select.min.js"></script>
+  <script>
+    $(function () {
+      $("select.select").niceSelect();
+    });
+  </script>
+  <script src="../js/design.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- top pop -->
+    <div class="top_pop">
+      <a href="#" class="banner"><img src="../images/top_banner01.png" alt="" /></a>
+      <button type="button" class="btn_close"></button>
+    </div>
+    <script>
+      $(function () {
+        $(".top_pop .btn_close").on("click", function () {
+          $(this).parents(".top_pop").addClass("hide");
+        });
+      });
+    </script>
+    <!--// top pop -->
+
+    <!-- header -->
+    <header id="header">
+      <div class="inner_center">
+        <h1 class="logo"><a href="#">ROOTENERGY</a></h1>
+        <nav class="gnb_box">
+          <ul class="gnb">
+            <li>
+              <a href="#" class="in_ul"><span>투자</span></a>
+              <div class="depth">
+                <ul>
+                  <li><a href="#">투자하기</a></li>
+                  <li><a href="#">법인투자안내</a></li>
+                  <li><a href="#">채권거래소</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#"><span>대출</span></a>
+            </li>
+            <li>
+              <a href="#" class="in_ul"><span>회사소개</span></a>
+              <div class="depth">
+                <ul>
+                  <li><a href="#">공시안내</a></li>
+                  <li><a href="#">언론보도</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#" class="in_ul"><span>고객센터</span></a>
+              <div class="depth">
+                <ul>
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">자주묻는질문</a></li>
+                  <li><a href="#">프로모션</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="head_right">
+          <a href="#" class="btn_login">로그인</a>
+          <a href="#" class="btn_join">회원가입</a>
+          <a href="#" class="btn"><img src="../images/ico_my.svg" alt="마이페이지" /></a>
+          <a href="javascript:toggleMenu();" class="btn"><img src="../images/ico_menu.svg" alt="전체메뉴" /></a>
+        </div>
+      </div>
+    </header>
+    <div class="all_menu">
+      <div class="inner_center">
+        <button type="button" onclick="toggleMenu()" class="btn_close"></button>
+        <div class="menu_left">
+          <div class="menu_head">
+            <p class="txt_welcome">환영합니다! <br />홍길동님</p>
+            <div class="user_type">
+              <span class="tip">상향신청</span>
+              <span class="txt">개인<br />투자자</span>
+            </div>
+          </div>
+          <div class="menu_info">
+            <!-- 로그인후 -->
+            <div class="bank_box">
+              <div class="name_num">
+                <span class="name"><img src="../images/img_bank_nh.png" alt="" /></span>
+                <p class="num">79018932303133<button class="copy"></button></p>
+              </div>
+              <dl class="amount">
+                <dt>예치금</dt>
+                <dd>1,000,000원</dd>
+              </dl>
+            </div>
+            <!--// 로그인후 -->
+            <ul class="menu_main">
+              <li>
+                <a href="#"><img src="../images/ico_menu_main01.png" alt="투자현황" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="../images/ico_menu_main02.png" alt="마이페이지" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="../images/ico_menu_main03.png" alt="프로모션" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu_right">
+          <ul class="menu_list">
+            <li>
+              <a href="#">
+                <i class="ico" style="background-image: url(../images/ico_menu_list01.svg)"></i>
+                <span>투자</span>
+              </a>
+              <ul class="depth">
+                <li><a href="#">투자하기</a></li>
+                <li><a href="#">법인투자안내</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <i class="ico" style="background-image: url(../images/ico_menu_list02.svg)"></i>
+                <span>대출</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="ico" style="background-image: url(../images/ico_menu_list03.svg)"></i>
+                <span>회사소개</span>
+              </a>
+              <ul class="depth">
+                <li><a href="#">공시안내</a></li>
+                <li><a href="#">언론보도</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <i class="ico" style="background-image: url(../images/ico_menu_list04.svg)"></i>
+                <span>고객센터</span>
+              </a>
+              <ul class="depth">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">자주묻는질문</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <i class="ico" style="background-image: url(../images/ico_menu_list05.svg)"></i>
+                <span>채권거래소</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="ico" style="background-image: url(../images/ico_menu_list06.svg)"></i>
+                <span>이웃신청 현황</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+
+      <div class="sub_visual">
+        <div class="inner_center">
+          <ul class="sub_location white">
+            <li><a href="#" class="home">홈</a></li>
+            <li><em>회사소개</em></li>
+          </ul>
+        </div>
+        <div class="imgbox"><img src="../images/bg_corp_intro.png" alt="" /></div>
+        <div class="txtbox">
+          <span class="tag">회사소개</span>
+          <h2 class="title">More for future</h2>
+          <p class="title_p">
+            세상의 가장 작은 뿌리인 <br>
+            시민들 한사람 한사람에서부터<br>
+            누구나 에너지의 주인이 될 수 있는 미래를 만들어갑니다
+          </p>
+        </div>
+      </div>
+
+      <div class="inner_center">
+        <h3 class="sub_title_guide">루트에너지의 미션</h3>
+
+        <div class="sub_mission_guide">
+          <div class="imgbox"><img src="../images/logo_mission.svg" alt="" /></div>
+
+          <h4 class="title">재생에너지에</h4>
+
+          <div class="item_list">
+
+            <div class="item">
+              <div class="ico"></div>
+              <h5 class="tit">사람을 더하다</h5>
+              <p class="txt">
+                루트에너지는 태양광,ESS,풍력 등의 '발전사업자'와 설치할 수 있는 적합한 공간을 가진 '호스트'를 다수의 '개인 투자자' 와 온라인으로 연결합니다. <br />
+                특히, 펀딩과정에서 지역주민을 우대하는 서비스를 제공하여 주민들과 함께하는 발전소를 건설합니다.
+              </p>
+            </div>
+
+            <div class="item">
+              <div class="ico"></div>
+              <h5 class="tit">금융을 더하다</h5>
+              <p class="txt">
+                기존 금융권보다 유연한 조건으로 자금 조달의 사각지대에 있던 소규모 발전 시장에 중금리의 '금융' 서비스를 제공합니다. 동시에 양질의 재생에너지 발전 사업에 시민들이 누구나 소액으로 직접 투자할수 있는, 크라우드 펀딩 서비스를 제공합니다.
+              </p>
+            </div>
+
+            <div class="item">
+              <div class="ico"></div>
+              <h5 class="tit">IT을 더하다</h5>
+              <p class="txt">
+                태양광,ESS,풍력 등의 '발전사업자'와 설치할 수 있는 적합한 공간을 가진 '호스트'를 다수의 '개인 투자자'와 온라인으로 연결합니다. 특히, 펀딩과정에서 지역주민을 우대하는 서비스를 제공하여 주민들과 함께하는 발전소를 건설합니다.
+              </p>
+            </div>
+
+            <div class="item">
+              <div class="ico"></div>
+              <h5 class="tit">미래을 더하다</h5>
+              <p class="txt">
+                안정적이고 높은 수익을 제공할 뿐 아니라, 미세먼지나 지구 온난화 등의 환경 문제 해결을 통한 미래 세대의 더 깨끗한 환경을 제공합니다. 또한 지역 주민, 임직원, 학생을 대상으로 우대 금리를 제공하고, 발전소를 지역이 함께 소유하는 '지역자산화'를 추구합니다. 이를 통해 보다 더 살기 좋은 지역 공동체를 만드는데 보탬이 될 수 있습니다.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="sub_partner_guide">
+        <div class="inner_center">
+          <h3 class="sub_title_guide">정책, 기술, 금융의 <br>최고 전문가와 함께합니다</h3>
+          <div class="partner_box">
+            <div class="partner_logos">
+              <ul>
+                <li>
+                  <div class="imgbox"><img src="../images/img_partner_logo01.svg" alt=""></div>
+                </li>
+                <li>
+                  <div class="imgbox"><img src="../images/img_partner_logo02.svg" alt=""></div>
+                </li>
+                <li>
+                  <div class="imgbox"><img src="../images/img_partner_logo03.svg" alt=""></div>
+                </li>
+                <li>
+                  <div class="imgbox"><img src="../images/img_partner_logo04.svg" alt=""></div>
+                </li>
+                <li>
+                  <div class="imgbox"><img src="../images/img_partner_logo05.svg" alt=""></div>
+                </li>
+                <li>
+                  <div class="imgbox"><img src="../images/img_partner_logo06.svg" alt=""></div>
+                </li>
+                <li>
+                  <div class="imgbox"><img src="../images/img_partner_logo07.svg" alt=""></div>
+                </li>
+              </ul>
+            </div>
+            <div class="partner_main">
+              <div class="imgbox"><img src="../images/img_partner_logo00.svg" alt=""></div>
+              <p class="txt">루트에너지는 NH농협은행과 함께 최고의 금융 보안성을 <br>확보한 핀테크 서비스를 제공합니다.</p>
+            </div>
+          </div>
+
+          <ul class="partner_list">
+            <li>
+              <div class="inbox">
+                <div class="imgbox"><img src="../images/img_partner_list01.svg" alt=""></div>
+                <p class="txt">라이선스 등록</p>
+              </div>
+            </li>
+            <li>
+              <div class="inbox">
+                <div class="imgbox"><img src="../images/img_partner_list02.svg" alt=""></div>
+                <p class="txt">예탁기관</p>
+              </div>
+            </li>
+            <li>
+              <div class="inbox">
+                <div class="imgbox"><img src="../images/img_partner_list03.svg" alt=""></div>
+                <p class="txt">신용평가</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <!--// container -->
+
+    <div class="btn_box">
+      <a href="#" class="btn_style h90 bg_blue">홈페이지 바로가기</a>
+    </div>
+  </div>
+</body>
+
+</html>
